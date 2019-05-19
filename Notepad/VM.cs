@@ -38,21 +38,6 @@ namespace Notepad
             }
         }
 
-        private bool isWrap;
-        public bool IsWrap
-        {
-            get { return isWrap; }
-            set
-            {
-                if (isWrap != value)
-                {
-                    isWrap = value;
-                    RaisePropertyChanged("IsWrap");
-                    Wrapping = value ? TextWrapping.Wrap : TextWrapping.NoWrap;
-                }
-            }
-        }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void RaisePropertyChanged(string property)
