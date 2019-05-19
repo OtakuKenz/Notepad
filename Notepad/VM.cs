@@ -10,6 +10,10 @@ namespace Notepad
 {
     public class VM
     {
+        public VM()
+        {
+            FontSize = 12;
+        }
         private int fontSize;
         public int FontSize
         {

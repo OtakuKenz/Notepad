@@ -11,12 +11,12 @@
     Height="450"
     Closing="AcrylicWindow_Closing"
     Icon="icon.png"
-    TintOpacity="0.6"
+    TintOpacity="0.8"
     Topmost="{Binding IsOnTop}"
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60" />
+            <RowDefinition Height="45" />
             <RowDefinition />
         </Grid.RowDefinitions>
         <Grid
