@@ -53,20 +53,6 @@ namespace Notepad
             }
         }
 
-        private TextWrapping wrapping;
-        public TextWrapping Wrapping
-        {
-            get { return wrapping; }
-            set
-            {
-                if (wrapping != value)
-                {
-                    wrapping = value;
-                    RaisePropertyChanged("Wrapping");
-                }
-            }
-        }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void RaisePropertyChanged(string property)

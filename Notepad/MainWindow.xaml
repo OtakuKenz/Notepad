@@ -11,7 +11,7 @@
     Height="450"
     Closing="AcrylicWindow_Closing"
     Icon="icon.png"
-    TintOpacity="10"
+    TintOpacity="0.6"
     Topmost="{Binding IsOnTop}"
     mc:Ignorable="d">
     <Grid>
@@ -33,18 +33,11 @@
                     Style="{StaticResource TextBoxRevealStyle}"
                     Text="{Binding FontSize, StringFormat=N0, UpdateSourceTrigger=PropertyChanged}" />
             </StackPanel>
-            <StackPanel
+            <CheckBox
                 HorizontalAlignment="Right"
                 VerticalAlignment="Center"
-                Orientation="Horizontal">
-                <CheckBox
-                    Margin="0,0,50,0"
-                    Content="Wrap Text"
-                    IsChecked="{Binding IsWrap}"
-                    Visibility="Collapsed" />
-                <CheckBox Content="Is On Top" IsChecked="{Binding IsOnTop}" />
-
-            </StackPanel>
+                Content="Is On Top"
+                IsChecked="{Binding IsOnTop}" />
 
         </Grid>
         <TextBox
@@ -56,6 +49,6 @@
             AcceptsTab="True"
             FontSize="{Binding FontSize}"
             Style="{StaticResource TextBoxRevealStyle}"
-            TextWrapping="{Binding Wrapping}" />
+            TextWrapping="Wrap" />
     </Grid>
 </fw:AcrylicWindow>
