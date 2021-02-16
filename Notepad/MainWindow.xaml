@@ -33,11 +33,14 @@
                     Style="{StaticResource TextBoxRevealStyle}"
                     Text="{Binding FontSize, StringFormat=N0, UpdateSourceTrigger=PropertyChanged}" />
             </StackPanel>
-            <CheckBox
-                HorizontalAlignment="Right"
+            <StackPanel HorizontalAlignment="Right"
                 VerticalAlignment="Center"
-                Content="Is On Top"
-                IsChecked="{Binding IsOnTop}" />
+                        Orientation="Horizontal">
+                <CheckBox
+                IsChecked="{Binding IsOnTop}" Margin="0,0,5,0"/>
+                <TextBlock Text="is on top"/>
+            </StackPanel>
+            
 
         </Grid>
         <TextBox
